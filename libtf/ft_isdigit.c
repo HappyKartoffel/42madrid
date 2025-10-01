@@ -10,36 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
-int is_alpha(char *str)
+int is_digit(char *c)
 {
     int i;
 
     i = 0;
-    if (str[0] == '\0')
+    if (c[0] == '\0')
         return (0);
-    while (str[i] != '\0')
-    {
-        if ((str[i] > 64 && str[i] < 91) || (str[i] > 96 && str[i] < 123))
-        {
+    while (c[i]!='\0') {
+        if (c[i] >= '0' && c[i] <= '9')
             i++;
-        }
         else
-        {
             return (0);
-        }
     }
     return (1);
 }
 
 int	main(int c, char *v[])
 {
-	char    *str;
+char *cadena;
     int result;
 
-    str = "atcs";
-    result = is_alpha(str);
+    cadena = "123x";
+    result = is_digit(cadena);
     if(result == 1)
-        write(1, "es alfabetico", 13);
+        write(1, "es un numero\n", 14);
     else
-        write(1, "no es alfabetico", 16);
+        write(1, "no es un numero\n", 17);
+	return (1);
 }

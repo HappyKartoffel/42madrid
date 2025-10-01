@@ -1,45 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfrsanc <marvin42.fr>                     +#+  +:+       +#+        */
+/*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/29 18:20:24 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/09/29 18:20:24 by alfrsanc         ###   ########.fr       */
+/*   Created: 2025/10/01 20:16:01 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/01 20:18:32 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
-int is_alpha(char *str)
+int is_alnum(char *c)
 {
     int i;
 
     i = 0;
-    if (str[0] == '\0')
+    if (c[0] == '\0')
         return (0);
-    while (str[i] != '\0')
-    {
-        if ((str[i] > 64 && str[i] < 91) || (str[i] > 96 && str[i] < 123))
-        {
-            i++;
-        }
+    while (c[i]!='\0') {
+        if ((c[i] >= '0' && c[i] <= '9') &&
+            (c[i] > 64 && c[i] < 91) || (c[i] > 96 && c[i] < 123))
+                i++;
         else
-        {
             return (0);
-        }
     }
     return (1);
 }
 
 int	main(int c, char *v[])
 {
-	char    *str;
+char *cadena;
     int result;
 
-    str = "atcs";
-    result = is_alpha(str);
+    cadena = "123x";
+    result = is_alnum(cadena);
     if(result == 1)
-        write(1, "es alfabetico", 13);
+        write(1, "es alfanumerico\n", 16);
     else
-        write(1, "no es alfabetico", 16);
+        write(1, "no es alfanumerico\n", 19);
+	return (1);
 }
