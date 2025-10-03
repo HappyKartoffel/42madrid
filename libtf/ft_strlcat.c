@@ -1,46 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/02 20:24:09 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:27:02 by alfrsanc         ###   ########.fr       */
+/*   Created: 2025/10/03 18:45:35 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/03 18:55:54 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	to_upper(char *str)
+char	*ft_strlcat(char *dst, char *src, int size)
 {
-	int		i;
-	char	c;
+	int	dstlen;
+	int	srclen;
+	int	i;
 
+	dstlen = 0;
+	srclen = 0;
 	i = 0;
-	if (str[0] == '\0')
-		return (0);
-	while (str[i] != '\0')
+	while (dst[dstlen] != '\0')
+		strlen++;
+	while (src[srclen] != '\0')
+		srclen++;
+	while (src[i] != '\0' && i < (size - dstlen -1))
 	{
-		if (str[i] > 96 && str[i] < 123)
-		{
-			c = str[i] - 32;
-			write(1, &c, 1);
-		}
-		else
-			write(1, &str[i], 1);
+		dst[dstlen + i] = src[i];
 		i++;
 	}
-	return (1);
+	dst[dstlen + i] = '\0';
+	return (dstlen + srclen);
 }
-
-/*int main(void)
-{
-    char *str;
-    int resul;
-
-    str = "oLa que TAl 3";
-    resul = to_upper(str);
-    if(resul==0)
-        write(1, "algo", 4);
-    return (0);
-}*/

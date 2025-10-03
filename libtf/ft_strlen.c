@@ -6,18 +6,18 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:09:13 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/02 20:23:48 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/03 17:23:29 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int str_len(char *str)
+int	str_len(char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (str[0] == '\n')
-        return (0);
-    while (str[i] != '\n')
-        i++;
-    return (i);    
+	i = 0;
+	if (str[0] == '\n')
+		return (0);
+	while (str[i] != '\n')
+		i++;
+	return (i);
 }

@@ -1,46 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/02 20:24:09 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:27:02 by alfrsanc         ###   ########.fr       */
+/*   Created: 2025/10/03 18:24:36 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/03 18:44:21 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	to_upper(char *str)
+int	ft_strncmp(char *s1, char *s2, int len)
 {
-	int		i;
-	char	c;
+	int	i;
 
 	i = 0;
-	if (str[0] == '\0')
-		return (0);
-	while (str[i] != '\0')
+	while ((s1[i] == '\0' || s2[i] == '\0') && i < len)
 	{
-		if (str[i] > 96 && str[i] < 123)
-		{
-			c = str[i] - 32;
-			write(1, &c, 1);
-		}
-		else
-			write(1, &str[i], 1);
+		if (s1[i] != s2[i])
+			return (s1[i] - s[i]);
 		i++;
 	}
-	return (1);
+	return (s1[i] - s2[i]);
 }
-
-/*int main(void)
-{
-    char *str;
-    int resul;
-
-    str = "oLa que TAl 3";
-    resul = to_upper(str);
-    if(resul==0)
-        write(1, "algo", 4);
-    return (0);
-}*/
