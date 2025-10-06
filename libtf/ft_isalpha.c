@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfrsanc <marvin42.fr>                     +#+  +:+       +#+        */
+/*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:24 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:17:33 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:13:37 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	is_alpha(char *str)
+
+int	ft_isalpha(char *str)
 {
 	int	i;
 

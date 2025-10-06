@@ -6,12 +6,12 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:24:09 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:27:02 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:14:53 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	to_upper(char *str)
+
+int	ft_toupper(char *str)
 {
 	int		i;
 	char	c;

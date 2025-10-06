@@ -6,13 +6,13 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 20:16:01 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:13:43 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:13:43 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	is_alnum(char *c)
+int	ft_isalnum(char *c)
 {
 	int	i;
 

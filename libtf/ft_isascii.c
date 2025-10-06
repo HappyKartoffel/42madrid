@@ -6,12 +6,12 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:52:21 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:18:51 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:13:53 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	is_ascii(char c)
+
+int	ft_isascii(char c)
 {
 	if (c < 0 || c > 127)
 		return (0);

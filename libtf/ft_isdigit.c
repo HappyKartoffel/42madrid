@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfrsanc <marvin42.fr>                     +#+  +:+       +#+        */
+/*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:24 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:20:45 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:13:58 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	is_digit(char *c)
+
+int	ft_isdigit(char *c)
 {
 	int	i;
 

@@ -6,12 +6,12 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:03:52 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:21:32 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:14:05 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	is_print(char c)
+
+int	ft_isprint(char c)
 {
 	if (c > 31 && c < 127)
 		return (1);

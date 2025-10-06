@@ -3,10 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   libtf.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfrsanc <marvin42.fr>                     +#+  +:+       +#+        */
+/*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:21 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/09/29 18:20:21 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:27:40 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBTF_H
+#define LIBTF_H
+
+int ft_atoi(char *str)
+#endif
