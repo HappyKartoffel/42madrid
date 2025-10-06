@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int str_len(char *str)
+int	str_len(char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (str[0] == '\n')
-        return (0);
-    while (str[i] != '\n')
-        i++;
-    return (i);    
+	i = 0;
+	if (str[0] == '\n')
+		return (0);
+	while (str[i] != '\n')
+		i++;
+	return (i);
 }
