@@ -6,34 +6,34 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:11:17 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/02 20:23:39 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/03 17:25:26 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-int to_lower(char *str)
+int	to_lower(char *str)
 {
-    int i;
-    char    c;
-    i = 0;
-    if (str[0] == '\0')
-        return (0);
-    while (str[i] != '\0')
-    {
-        if (str[i] > 64 && str[i] < 91)
-        {
-            c = str[i] + 32;
-            write(1, &c, 1);
-        }
-        else
-            write(1, &str[i], 1);
-        i++;
-    }
-    return (1);
+	int		i;
+	char	c;
+
+	i = 0;
+	if (str[0] == '\0')
+		return (0);
+	while (str[i] != '\0')
+	{
+		if (str[i] > 64 && str[i] < 91)
+		{
+			c = str[i] + 32;
+			write(1, &c, 1);
+		}
+		else
+			write(1, &str[i], 1);
+		i++;
+	}
+	return (1);
 }
 
-int main(void)
+/*int main(void)
 {
     char *str;
     int resul;
@@ -43,4 +43,4 @@ int main(void)
     if(resul==0)
         write(1, "algo", 4);
     return (0);
-}
+}*/

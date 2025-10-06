@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/02 19:52:21 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 17:18:51 by alfrsanc         ###   ########.fr       */
+/*   Created: 2025/10/03 18:34:32 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/03 18:43:40 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	is_ascii(char c)
+int	ft_atoi(char *str)
 {
-	if (c < 0 || c > 127)
-		return (0);
-	else
-		return (1);
+	int	num;
+	int	sign;
+
+	num = 0;
+	sign = 1;
+	while (*str == ' ' || (*str > 8 && *str < 14))
+		str++;
+	while (*str == "-" || *str == "+")
+	{
+		if (*str == "-")
+			sign = -sign;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		num = num * 10 + (*str - '0');
+		str++;
+	}
+	return (num * sign);
 }
-
-/*int main (void)
-{
-    char    c;
-    int result;
-
-    c = '¬';
-    result = is_ascii(c);
-    if (result == 1) 
-        write(1, "es ascii", 8);
-    else
-        write(1, "no es ascii", 11);
-    return (0);    
-}*/

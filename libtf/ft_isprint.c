@@ -6,21 +6,20 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:03:52 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/02 20:07:48 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/03 17:21:32 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-int is_print(char c)
+int	is_print(char c)
 {
-    if (c > 31 && c < 127)
-        return (1);
-    else
-        return (0);
+	if (c > 31 && c < 127)
+		return (1);
+	else
+		return (0);
 }
 
-int main(void)
+/*int main(void)
 {
     char    c;
     int resul;
@@ -32,4 +31,4 @@ int main(void)
     else
         write(1, "no es printeable", 16);
     return (1);
-}
+}*/
