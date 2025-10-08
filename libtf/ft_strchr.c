@@ -6,25 +6,21 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 17:31:07 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 18:12:31 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 11:41:04 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	ft_strchr(char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	int	i;
-
-	i = 0;
-	if (str[0] == '\0' || c == '\0')
-		return (0);
-	while (str[i] != '\0')
+	while (*str)
 	{
-		if (str[i] == c)
-			return (i);
-		i++;
+		if (*str == c)
+			return ((char *)str);
+		str++;
 	}
-	return (-1);
+	if (c == '\0')
+		return ((char *)str);
+	return (0);
 }
 
 /*int main(void)

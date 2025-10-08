@@ -6,27 +6,29 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 17:31:07 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 18:23:23 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 12:17:48 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-int	ft_strrchr(char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = -1;
-	if (str[0] == '\0' || c == '\0')
-		return (-1);
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)
 			j = i;
 		i++;
 	}
-	return (j);
+	if (c == '\0')
+		return ((char *)str + i);
+	if (j == -1)
+		return (0);
+	else
+		return ((char *)str + j);
 }
 
 /*int main(void)

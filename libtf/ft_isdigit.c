@@ -6,26 +6,16 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:24 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/06 20:13:58 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 11:27:32 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-int	ft_isdigit(char *c)
+int	ft_isdigit(int c)
 {
-	int	i;
-
-	i = 0;
-	if (c[0] == '\0')
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
 		return (0);
-	while (c[i] != '\0')
-	{
-		if (c[i] >= '0' && c[i] <= '9')
-			i++;
-		else
-			return (0);
-	}
-	return (1);
 }
 
 /*int	main(int c, char *v[])

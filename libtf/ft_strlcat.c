@@ -6,24 +6,26 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 18:45:35 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/03 18:55:54 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 11:57:26 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlcat(char *dst, char *src, int size)
+unsigned int	*ft_strlcat(char *dst, char *src, unsigned int dsize)
 {
-	int	dstlen;
-	int	srclen;
-	int	i;
+	unsigned int	dstlen;
+	unsigned int	srclen;
+	unsigned int	i;
 
 	dstlen = 0;
 	srclen = 0;
 	i = 0;
 	while (dst[dstlen] != '\0')
-		strlen++;
+		dstlen++;
 	while (src[srclen] != '\0')
 		srclen++;
-	while (src[i] != '\0' && i < (size - dstlen -1))
+	if (dstlen >= dsize)
+		return (dsize + srclen);
+	while (src[i] != '\0' && i < (dsize - dstlen -1))
 	{
 		dst[dstlen + i] = src[i];
 		i++;

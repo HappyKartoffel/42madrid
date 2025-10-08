@@ -6,28 +6,17 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 20:16:01 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/06 20:13:43 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 11:34:36 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	ft_isalnum(char *c)
+int	ft_isalnum(int c)
 {
-	int	i;
-
-	i = 0;
-	if (c[0] == '\0')
+	if ((c >= '0' && c <= '9')
+		&& (c >= 'A' && c <= 'Z') || (c > 'a' && c < 'z'))
+		return (1);
+	else
 		return (0);
-	while (c[i] != '\0')
-	{
-		if ((c[i] >= '0' && c[i] <= '9')
-			&& (c[i] > 64 && c[i] < 91) || (c[i] > 96 && c[i] < 123))
-			i++;
-		else
-			return (0);
-	}
-	return (1);
 }
 
 /*int	main(int c, char *v[])

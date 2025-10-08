@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:09:13 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/06 20:14:24 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 12:24:55 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@ int	ft_strlen(char *str)
 	int	i;
 
 	i = 0;
-	if (str[0] == '\n')
-		return (0);
-	while (str[i] != '\n')
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }

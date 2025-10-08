@@ -6,10 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:11:17 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/06 20:15:00 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/08 11:27:56 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
 int	ft_tolower(char *str)
 {
