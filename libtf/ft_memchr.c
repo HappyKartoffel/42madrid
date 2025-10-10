@@ -6,17 +6,17 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:28:23 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 11:35:57 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/10 19:11:08 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stddef.h>
 
-void	*ft_memchr(const void *str, int c, unsigned int s)
+void	*ft_memchr(const void *str, int c, size_t s)
 {
 	const unsigned char	*ptr;
 	unsigned char		uc;
-	unsigned int		i;
+	size_t				i;
 
 	ptr = (const unsigned char *)str;
 	uc = (unsigned char)c;

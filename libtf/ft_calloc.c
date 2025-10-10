@@ -6,17 +6,17 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:40:58 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 13:42:00 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/10 19:10:17 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_calloc(unsigned int nmemb, unsigned int size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	unsigned int	total_size;
+	size_t			total_size;
 	unsigned char	*arr;
-	unsigned int	i;
+	size_t			i;
 
 	total_size = nmemb * size;
 	arr = malloc(total_size);
