@@ -27,6 +27,6 @@ char			*ft_strrchr(const char *str, int c);
 int				ft_strncmp(char *s1, char *s2, unsigned int len);
 int				ft_tolower(char *str);
 int				ft_toupper(char *str);
-void			ft_calloc(unsigned int nmemb, unsigned int size);
+void			*ft_calloc(unsigned int nmemb, unsigned int size);
 char			*ft_strdup(const char *s);
 #endif
