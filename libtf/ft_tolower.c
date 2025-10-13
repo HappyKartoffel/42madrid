@@ -12,34 +12,19 @@
 
 #include <unistd.h>
 
-int	ft_tolower(char *str)
+int	ft_tolower(int c)
 {
-	int		i;
-	char	c;
-
-	i = 0;
-	if (str[0] == '\0')
-		return (0);
-	while (str[i] != '\0')
-	{
-		if (str[i] > 64 && str[i] < 91)
-		{
-			c = str[i] + 32;
-			write(1, &c, 1);
-		}
-		else
-			write(1, &str[i], 1);
-		i++;
-	}
-	return (1);
+	if (c > 64 && c < 91)
+		c = c + 32;
+	return (c);
 }
 
 /*int main(void)
 {
-    char *str;
+    char str;
     int resul;
 
-    str = "oLa QUE TAl 3";
+    str = 'A';
     resul = to_lower(str);
     if(resul==0)
         write(1, "algo", 4);
