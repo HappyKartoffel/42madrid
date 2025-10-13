@@ -10,36 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(char *str)
+int	ft_toupper(int c)
 {
-	int		i;
-	char	c;
-
-	i = 0;
-	if (str[0] == '\0')
-		return (0);
-	while (str[i] != '\0')
-	{
-		if (str[i] > 96 && str[i] < 123)
-		{
-			c = str[i] - 32;
-			write(1, &c, 1);
-		}
-		else
-			write(1, &str[i], 1);
-		i++;
-	}
-	return (1);
+	if (c > 96 && c < 123)
+		c -= 32;
+	return (c);
 }
 
 /*int main(void)
 {
-    char *str;
+    char str;
     int resul;
 
-    str = "oLa que TAl 3";
+    str = 'o';
     resul = to_upper(str);
-    if(resul==0)
-        write(1, "algo", 4);
+	write(1, &resul, 1);
     return (0);
 }*/
