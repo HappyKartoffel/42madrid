@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	*ft_strlcat(char *dst, char *src, size_t dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
 	size_t	dstlen;
 	size_t	srclen;
