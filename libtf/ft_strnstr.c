@@ -6,9 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 18:22:57 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:13:08 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:45:50 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -17,7 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	if (little[i] == '\0')
-		return (big);
+		return ((char *)big);
 	while (i < len && big[i] != '\0')
 	{
 		j = 0;

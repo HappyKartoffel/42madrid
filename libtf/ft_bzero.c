@@ -6,9 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:44:45 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:23:02 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:39:13 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:50:32 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:12:52 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:39:05 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {

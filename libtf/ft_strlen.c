@@ -6,9 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:09:13 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:11:24 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:38:45 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 size_t	ft_strlen(const char *str)
 {

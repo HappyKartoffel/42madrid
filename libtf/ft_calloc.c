@@ -6,9 +6,12 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:40:58 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:07:08 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:47:05 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
+#include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

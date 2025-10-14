@@ -6,9 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 18:45:35 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:10:42 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:44:04 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
