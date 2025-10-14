@@ -6,16 +6,16 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 18:24:36 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:09:30 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:11:38 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, size_t len)
+int	ft_strncmp(char *s1, char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < len)
+	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{
 		if (s1[i] != s2[i])
 			return ((unsigned char)s1[i] - (unsigned char)s2[i]);

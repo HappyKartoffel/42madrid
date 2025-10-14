@@ -6,11 +6,9 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:11:17 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 11:27:56 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:05:04 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_tolower(int c)
 {
@@ -18,14 +16,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-/*int main(void)
-{
-    char str;
-    int resul;
-
-    str = 'A';
-    resul = to_lower(str);
-    write(1, &resul, 4);
-    return (0);
-}*/

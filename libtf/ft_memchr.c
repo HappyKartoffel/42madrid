@@ -6,22 +6,20 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:28:23 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/10 19:11:08 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:08:21 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-void	*ft_memchr(const void *str, int c, size_t s)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*ptr;
 	unsigned char		uc;
 	size_t				i;
 
-	ptr = (const unsigned char *)str;
+	ptr = (const unsigned char *)s;
 	uc = (unsigned char)c;
 	i = 0;
-	while (i < s)
+	while (i < n)
 	{
 		if (ptr[i] == uc)
 			return ((void *)(ptr + i));
@@ -29,21 +27,3 @@ void	*ft_memchr(const void *str, int c, size_t s)
 	}
 	return (0);
 }
-
-/*int main() {
-    const char texto[] = "Hola, mundo!";
-    char buscar = 'm';
-
-    // Buscamos el carácter 'm' dentro del texto
-    void *resultado = ft_memchr(texto, buscar, sizeof(texto));
-
-    if (resultado != NULL) {
-        // Imprimimos desde la posición encontrada
-        printf("Carácter '%c' encontrado);
-        printf("Desde ahí, el texto es: \"%s\"\n", (char *)resultado);
-    } else {
-        printf("Carácter '%c' no encontrado.\n", buscar);
-    }
-
-    return 0;
-}*/

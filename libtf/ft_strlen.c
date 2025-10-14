@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:09:13 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 12:24:55 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:11:24 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 

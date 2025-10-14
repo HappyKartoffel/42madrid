@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:24:09 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 12:09:54 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:05:15 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*int main(void)
-{
-    char str;
-    int resul;
-
-    str = 'o';
-    resul = to_upper(str);
-	write(1, &resul, 1);
-    return (0);
-}*/

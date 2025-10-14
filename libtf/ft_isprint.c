@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 20:03:52 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/08 11:35:30 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:07:39 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-/*int main(void)
-{
-    char    c;
-    int resul;
-
-    c = '&';
-    resul = is_print(c);
-    if(resul==1)
-        write(1, "es printeable", 13);
-    else
-        write(1, "no es printeable", 16);
-    return (1);
-}*/

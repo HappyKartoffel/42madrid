@@ -6,13 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:44:45 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/10 17:49:47 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:12:20 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
-
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
 	unsigned char	*str;
