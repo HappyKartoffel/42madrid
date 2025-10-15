@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:21 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 20:14:52 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/15 17:52:13 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,5 @@ char			*ft_strnstr(const char *big, const char *little, size_t len);
 int				ft_atoi(const char *nptr);
 void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s);
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
