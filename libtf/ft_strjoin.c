@@ -6,13 +6,13 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:55:40 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:17:59 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 19:49:43 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	get_len(char const *s)
+static int	get_len(char const *s)
 {
 	int	i;
 
@@ -33,6 +33,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = get_len(s1);
 	j = get_len(s2);
 	result = malloc(sizeof(char) * (i + j + 1));
+	if (!result)
+		return (0);
 	p = 0;
 	while (p < i)
 	{

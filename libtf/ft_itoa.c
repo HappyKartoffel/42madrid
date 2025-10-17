@@ -6,11 +6,13 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:05:46 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:16:36 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 19:37:45 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	int_len(int n)
+#include "libft.h"
+
+static int	int_len(int n)
 {
 	int	cuenta;
 
@@ -27,7 +29,7 @@ int	int_len(int n)
 	return (cuenta);
 }
 
-char	*escribir(char *resul, long n, int len)
+static char	*escribir(char *resul, long n, int len)
 {
 	while (n > 0)
 	{
