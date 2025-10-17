@@ -6,14 +6,14 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 19:52:21 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:07:31 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:25:47 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
 	if (c < 0 || c > 127)
-		return (1);
-	else
 		return (0);
+	else
+		return (1);
 }

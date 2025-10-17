@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 20:46:18 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:16 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:17:07 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

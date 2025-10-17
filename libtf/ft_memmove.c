@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 17:59:19 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:04 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:16:57 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

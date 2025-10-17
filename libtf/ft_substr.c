@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 20:18:42 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:50 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:18:34 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

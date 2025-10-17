@@ -5,16 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 20:50:42 by alfrsanc          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2025/10/17 18:09:03 by alfrsanc         ###   ########.fr       */
-=======
-/*   Updated: 2025/10/15 19:08:17 by alfrsanc         ###   ########.fr       */
->>>>>>> b75a3f4597d8a54dba0edea91b84a1fadf7c4c37
+/*   Created: 2025/10/17 18:15:13 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/17 18:17:23 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

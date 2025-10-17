@@ -6,13 +6,9 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:05:46 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/15 18:35:46 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:16:36 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 int	int_len(int n)
 {

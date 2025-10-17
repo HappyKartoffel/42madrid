@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 16:48:38 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:00:59 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:16:53 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 static void	copy_forward(unsigned char *d, const unsigned char *s, size_t n)
 {

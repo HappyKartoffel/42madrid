@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 18:45:35 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:28 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:18:03 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

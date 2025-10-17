@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:55:40 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:01:25 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:17:59 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include "libft.h"
 
 int	get_len(char const *s)
 {
@@ -48,22 +48,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[p + c] = '\0';
 	return (result);
 }
-
-/*int main(void)
-{
-	char *s1 = "ffffffff, ";
-	char *s2 = "mundo!";
-	char *resultado;
-
-	resultado = ft_strjoin(s1, s2);
-	if (!resultado)
-	{
-		printf("Error: malloc falló.\n");
-		return (1);
-	}
-
-	printf("Resultado de ft_strjoin: %s\n", resultado);
-
-	free(resultado);  // Liberar la memoria asignada por ft_strjoin
-	return (0);
-}*/
