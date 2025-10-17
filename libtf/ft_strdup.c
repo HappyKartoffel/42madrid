@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 13:34:35 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:47:39 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:01:20 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libtf.h"
 
 char	*ft_strdup(const char *s)
 {

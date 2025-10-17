@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 18:24:36 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 19:44:18 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:01:42 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libtf.h"
 
 int	ft_strncmp(char *s1, char *s2, size_t n)
 {

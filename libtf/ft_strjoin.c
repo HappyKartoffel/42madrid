@@ -6,12 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 19:55:40 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/14 20:18:05 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/17 18:01:25 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libtf.h"
 
 int	get_len(char const *s)
 {
