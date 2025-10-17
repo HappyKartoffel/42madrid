@@ -6,7 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 18:20:21 by alfrsanc          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2025/10/17 18:06:38 by alfrsanc         ###   ########.fr       */
+=======
+/*   Updated: 2025/10/15 19:07:49 by alfrsanc         ###   ########.fr       */
+>>>>>>> b75a3f4597d8a54dba0edea91b84a1fadf7c4c37
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +66,9 @@ int				ft_atoi(const char *nptr);
 void			*ft_calloc(size_t nmemb, size_t size);
 
 char			*ft_strdup(const char *s);
+<<<<<<< HEAD
 
+=======
+>>>>>>> b75a3f4597d8a54dba0edea91b84a1fadf7c4c37
 char			*ft_strjoin(char const *s1, char const *s2);
 #endif

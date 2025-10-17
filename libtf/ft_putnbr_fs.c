@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fs.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/14 20:50:42 by alfrsanc          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2025/10/17 18:09:03 by alfrsanc         ###   ########.fr       */
-=======
-/*   Updated: 2025/10/15 19:08:17 by alfrsanc         ###   ########.fr       */
->>>>>>> b75a3f4597d8a54dba0edea91b84a1fadf7c4c37
+/*   Created: 2025/10/15 18:37:49 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/15 18:41:22 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libtf.h"
+#include <unistd.h>
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	while (*s)
+	char	c;
+
+	if (n == -2147483648)
 	{
-		write(fd, s, 1);
-		s++;
+		write(fd, "-2147483648", 11);
+		return ;
 	}
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n > 9)
+		ft_putnbr_fd(n / 10, fd);
+	c = (n % 10) + '0';
+	write(fd, &c, 1);
 }
