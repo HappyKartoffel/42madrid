@@ -1,32 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 13:40:58 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/19 21:00:08 by alfrsanc         ###   ########.fr       */
+/*   Created: 2025/10/19 18:26:45 by alfrsanc          #+#    #+#             */
+/*   Updated: 2025/10/19 18:34:37 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+static int	get_len(const char *s)
 {
-	size_t			total_size;
-	unsigned char	*arr;
-	size_t			i;
+	int	i;
 
-	total_size = nmemb * size;
-	arr = malloc(total_size);
-	if (!arr)
-		return (NULL);
 	i = 0;
-	while (i < total_size)
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	char	*resul;
+	int		i;
+	int		len;
+
+	len = get_len(s);
+	resul = malloc(sizeof(char) * (len + 1));
+	if (!resul)
+		return (0);
+	i = 0;
+	while (s[i] != '\0')
 	{
-		arr[i] = 0;
+		resul[i] = f(i, s[i]);
 		i++;
 	}
-	return ((void *) arr);
+	resul[i] = '\0';
+	return (resul);
 }
