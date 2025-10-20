@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/06 19:28:23 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 18:16:42 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:36:30 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)(ptr + i));
 		i++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 20:07:54 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 20:57:01 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:42:15 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = end - start + 1;
 	resul = malloc(sizeof(char) * (len + 1));
 	if (!resul)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{

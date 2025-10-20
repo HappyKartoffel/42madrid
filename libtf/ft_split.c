@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 20:59:22 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/19 21:05:59 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:38:40 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,14 +50,14 @@ static char	*get_word(char const *s, char delim)
 	int		len;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	len = 0;
 	while (s[len] && s[len] != delim)
 		len++;
 	i = 0;
 	resul = malloc(sizeof(char) * (len + 1));
 	if (!resul)
-		return (0);
+		return (NULL);
 	while (i < len)
 	{
 		resul[i] = s[i];
@@ -73,10 +73,10 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	resul = malloc(sizeof(char *) * (num_words(s, c) + 1));
 	if (!resul)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (*s)
 	{
