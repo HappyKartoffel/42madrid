@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 18:05:46 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/17 19:37:45 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/20 20:56:15 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	int_len(int n)
 	return (cuenta);
 }
 
-static char	*escribir(char *resul, long n, int len)
+static char	*write_num(char *resul, long n, int len)
 {
 	while (n > 0)
 	{
@@ -61,5 +61,5 @@ char	*ft_itoa(int n)
 		resul[0] = '-';
 		nb = -nb;
 	}
-	return (escribir(resul, nb, len));
+	return (write_num(resul, nb, len));
 }
