@@ -6,7 +6,7 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:14:31 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/20 20:46:24 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/21 21:11:10 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+
+typedef struct s_list
+{
+	void 			*content;
+	struct s_list	*next;
+}					t_list;
 
 int				ft_isalpha(int c);
 
