@@ -6,7 +6,7 @@
 #    By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/29 18:20:14 by alfrsanc          #+#    #+#              #
-#    Updated: 2025/10/20 21:25:46 by alfrsanc         ###   ########.fr        #
+#    Updated: 2025/10/22 16:48:15 by alfrsanc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,4 +34,10 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
+#.PHONY hace, se asegure que aunque encontremos archivos con
+#nombre igual a los comandos en nuestro MakeFile
+#clean, fclean, re
+#se ejecuten unicamente los comandos dentro del archivo
+#sin esa orden, se puede llegar a ejecutar un archivo
+#que comparta el nombre en vez del comando deseado
+#dando a errores
