@@ -6,13 +6,16 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 18:38:16 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/29 20:06:03 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/10/30 11:46:02 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+/*#include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "ft_printint_10.c"
+#include "ft_printint_hex.c"*/
+#include "printf.h"
 
 void	ft_printchr(int c)
 {
@@ -32,6 +35,8 @@ void	ft_printstr(char *str)
 
 void	get_format(char const str, va_list va)
 {
+	void	*ptr;
+
 	if (str == 'c')
 		ft_printchr(va_arg(va, int));
 	if (str == 's')
@@ -39,15 +44,15 @@ void	get_format(char const str, va_list va)
 	if (str == 'p')
 		write(1, "P", 1);
 	if (str == 'd')
-		write(1, "C", 1);
+		ft_putnbr_base(va_arg(va, int), "0123456789");
 	if (str == 'i')
-		write(1, "I", 1);
+		ft_putnbr_base(va_arg(va, int), "0123456789");
 	if (str == 'u')
-		write(1, "U", 1);
+		ft_putnbr_base_unisgned(va_arg(va, unsigned int), "0123456789");
 	if (str == 'x')
-		write(1, "x", 1);
+		ft_putnbr_base_hex(va_arg(va, unsigned int), "0123456789abcdef");
 	if (str == 'X')
-		write(1, "X", 1);
+		ft_putnbr_base_hex(va_arg(va, unsigned int), "0123456789ABCDEF");
 	if (str == '%')
 		ft_printchr('%');
 }
@@ -77,5 +82,11 @@ int	ft_printf(char const *string, ...)
 int	main(void)
 {
 	ft_printf("H%%ola %smu%cndo %c%%\n", NULL, '%', '<', '%');
+	ft_printf("Hola %d\n", 253423);
+	ft_printf("H%%ola %i\n", -2242);
+	ft_printf("%s%x\n", "hexadecimal minusula: ", 1234);
+	ft_printf("%s%X\n", "hexadecimal mayuscula: ", 1234);
+	ft_printf("%s%u\n", "decimal sin signo: ", 3000000000);
+	ft_printf("%s%u\n", "decimal sin signo: ", -1);
 	return (0);
 }
