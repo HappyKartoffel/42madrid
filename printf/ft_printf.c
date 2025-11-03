@@ -6,15 +6,10 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 18:38:16 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/30 11:46:02 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/11/03 14:08:09 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdarg.h>
-#include <stdio.h>
-#include <unistd.h>
-#include "ft_printint_10.c"
-#include "ft_printint_hex.c"*/
 #include "printf.h"
 
 void	ft_printchr(int c)
@@ -42,7 +37,7 @@ void	get_format(char const str, va_list va)
 	if (str == 's')
 		ft_printstr(va_arg(va, char *));
 	if (str == 'p')
-		write(1, "P", 1);
+		ft_print_pointer(va_arg(va, void *), "0123456789abcdef");
 	if (str == 'd')
 		ft_putnbr_base(va_arg(va, int), "0123456789");
 	if (str == 'i')
@@ -88,5 +83,9 @@ int	main(void)
 	ft_printf("%s%X\n", "hexadecimal mayuscula: ", 1234);
 	ft_printf("%s%u\n", "decimal sin signo: ", 3000000000);
 	ft_printf("%s%u\n", "decimal sin signo: ", -1);
+	int x = 42;
+	int y = 255;
+	void *ptr = &x;
+	ft_printf("%p\n", ptr);
 	return (0);
 }
