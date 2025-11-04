@@ -6,12 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:35:23 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/11/03 14:17:06 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:57:25 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
-#include <unistd.h>
+#include "ft_printf.h"
 
 int	ft_length_hex2(char *str)
 {
@@ -46,13 +45,12 @@ void	ft_print2(char *str, int len)
 
 void	ft_print_pointer(void *nbr, char *base)
 {
-	char	result[32];
-	int		i;
-	int		len;
-unsigned long	ptr_address;
+	char			result[32];
+	int				i;
+	int				len;
+	unsigned long	ptr_address;
 
-ptr_address = (unsigned long) nbr;
-
+	ptr_address = (unsigned long) nbr;
 	i = 0;
 	len = ft_length_hex2(base);
 	if (len < 2)

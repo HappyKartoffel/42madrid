@@ -6,12 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 09:32:57 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/30 11:47:29 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:46:20 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_length_hex(char *str)
 {
@@ -56,11 +55,6 @@ void	ft_putnbr_base_hex(unsigned int nbr, char *base)
 	{
 		write(1, &base[0], 1);
 		return ;
-	}
-	if (nbr < 0)
-	{
-		write(1, "-", 1);
-		nbr = -nbr;
 	}
 	while (nbr > 0)
 	{

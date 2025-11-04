@@ -6,12 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 09:05:23 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/10/30 11:47:26 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:45:21 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_length_10(char *str)
 {

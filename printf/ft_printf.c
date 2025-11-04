@@ -6,11 +6,11 @@
 /*   By: alfrsanc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 18:38:16 by alfrsanc          #+#    #+#             */
-/*   Updated: 2025/11/03 14:08:09 by alfrsanc         ###   ########.fr       */
+/*   Updated: 2025/11/04 19:56:41 by alfrsanc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 void	ft_printchr(int c)
 {
@@ -30,8 +30,6 @@ void	ft_printstr(char *str)
 
 void	get_format(char const str, va_list va)
 {
-	void	*ptr;
-
 	if (str == 'c')
 		ft_printchr(va_arg(va, int));
 	if (str == 's')
@@ -55,10 +53,8 @@ void	get_format(char const str, va_list va)
 int	ft_printf(char const *string, ...)
 {
 	va_list		argumentos;
-	size_t		num_arg;
 
 	va_start (argumentos, string);
-	num_arg = 0;
 	while (*string)
 	{
 		if (*string == '%')
@@ -71,21 +67,5 @@ int	ft_printf(char const *string, ...)
 		string++;
 	}
 	va_end(argumentos);
-	return (0);
-}
-
-int	main(void)
-{
-	ft_printf("H%%ola %smu%cndo %c%%\n", NULL, '%', '<', '%');
-	ft_printf("Hola %d\n", 253423);
-	ft_printf("H%%ola %i\n", -2242);
-	ft_printf("%s%x\n", "hexadecimal minusula: ", 1234);
-	ft_printf("%s%X\n", "hexadecimal mayuscula: ", 1234);
-	ft_printf("%s%u\n", "decimal sin signo: ", 3000000000);
-	ft_printf("%s%u\n", "decimal sin signo: ", -1);
-	int x = 42;
-	int y = 255;
-	void *ptr = &x;
-	ft_printf("%p\n", ptr);
 	return (0);
 }
